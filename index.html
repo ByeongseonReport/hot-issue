@@ -31,10 +31,6 @@
   header .meta { color: #9ca3af; font-size: 13px; }
   header .meta span { margin-right: 14px; }
   main { max-width: 900px; margin: 0 auto; padding: 24px 20px 60px; }
-  .notice {
-    background: #fff7ed; border: 1px solid #fed7aa; color: #9a3412;
-    font-size: 13px; padding: 10px 14px; border-radius: 8px; margin-bottom: 24px;
-  }
   .issue-card {
     background: var(--card-bg); border: 1px solid var(--border);
     border-radius: 12px; padding: 20px 22px; margin-bottom: 20px;
@@ -79,13 +75,14 @@
   .tl-title a:hover { color: var(--accent); text-decoration: underline; }
   .tl-reaction {
     font-size: 12.5px; color: #6b7280; margin-top: 4px;
-    padding-left: 2px; border-left: 2px solid #e5e7eb; padding-left: 8px;
+    padding-left: 8px; border-left: 2px solid #e5e7eb;
   }
   .tl-reaction b { color: #374151; }
   footer {
     max-width: 900px; margin: 0 auto; padding: 0 20px 40px;
     color: var(--text-dim); font-size: 12px;
   }
+  footer p { margin: 4px 0; }
 </style>
 </head>
 <body>
@@ -93,14 +90,59 @@
   <div class="inner">
     <h1>오늘의 커뮤니티 핫이슈</h1>
     <div class="meta">
-      <span>2026년 7월 15일(수) 09:10 기준</span>
+      <span>2026년 7월 15일(수) 17:59 기준</span>
       <span>최근 24시간 · 6개 커뮤니티 모니터링</span>
     </div>
   </div>
 </header>
 <main>
-  <div class="notice">
-    ⚠️ 프로토타입 샘플입니다. 에펨코리아·디시인사이드 실베 2곳 실데이터로 만든 레이아웃 예시이며, 커뮤니티별 여론·댓글 반응 문구는 형식을 보여주기 위한 예시 텍스트입니다. 실제 매일 운영본은 각 게시글에 들어가 댓글을 직접 읽고 종합합니다.
+
+  <div class="issue-card">
+    <div class="issue-header">
+      <h3 class="issue-title">청주시의원 아동 성매매 혐의 논란</h3>
+      <span class="badge cross">교차 확산</span>
+    </div>
+    <div class="sources-row">
+      <span class="source-chip">디시인사이드</span>
+      <span class="source-chip">더쿠</span>
+      <span class="source-chip">클리앙</span>
+    </div>
+    <div class="issue-summary">아동 성매매·성착취물 제작 혐의로 수사받는 청주시의원이 지방선거 출마를 강행한 사실이 알려지며 3개 커뮤니티에서 동시 확산. 범죄 자체에 대한 공분과 함께 여야 책임공방으로 논쟁이 번지는 중.</div>
+
+    <div class="sentiment-box">
+      <div class="sentiment-title">커뮤니티별 여론 종합</div>
+      <div class="sentiment-row">
+        <span class="sentiment-source">디시인사이드</span>
+        <span class="sentiment-text">대표 게시물(댓글 198개) 확인 결과, 미성년자 대상 범죄 자체에 대한 비판이 기본 정서이나 상당수 댓글이 "국힘이니까/민주당이면" 식 정당 책임 공방으로 흘러가며 정치 논쟁화됨.</span>
+      </div>
+      <div class="sentiment-row">
+        <span class="sentiment-source">더쿠</span>
+        <span class="sentiment-text">"청주시의원, 여중생과 수차례 성매매" 등 사실관계 위주 제목이 조회 3만 회 이상 기록, 강한 비판 여론으로 추정.</span>
+      </div>
+      <div class="sentiment-row">
+        <span class="sentiment-source">클리앙</span>
+        <span class="sentiment-text">정치 성향이 강한 게시판 특성상 "의원 제명" 촉구, 압수수색 소식 등이 연달아 게시되며 여야 정치적 해석이 더해짐.</span>
+      </div>
+    </div>
+
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-time">15:05</div>
+        <span class="tl-source">디시인사이드</span>
+        <div class="tl-title"><a href="https://gall.dcinside.com/board/view/?id=dcbest&no=445773" target="_blank" rel="noopener">'아동 성매매 혐의' 청주시의원, 수사 받으며 지선 출마 강행</a></div>
+        <div class="tl-reaction"><b>댓글 반응:</b> 범죄 비판과 정당 책임공방이 뒤섞인 댓글 198개, 상위 댓글은 여야 프레임 다툼 위주</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-time">14:19</div>
+        <span class="tl-source">더쿠</span>
+        <div class="tl-title"><a href="https://theqoo.net/hot" target="_blank" rel="noopener">청주시의원, 여중생과 수차례 성매매…영상 보관하다 들통</a></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-time">17:37</div>
+        <span class="tl-source">클리앙</span>
+        <div class="tl-title"><a href="https://www.clien.net/service/board/park" target="_blank" rel="noopener">국.힘.아동성매매‧성착취물..의원 제명</a></div>
+      </div>
+    </div>
   </div>
 
   <div class="issue-card">
@@ -111,61 +153,286 @@
     <div class="sources-row">
       <span class="source-chip">에펨코리아</span>
       <span class="source-chip">디시인사이드</span>
+      <span class="source-chip">더쿠</span>
     </div>
-    <div class="issue-summary">수사 초기 대응 부실 및 윗선의 스토킹·살인 연결 차단 의혹이 핵심 쟁점.</div>
+    <div class="issue-summary">피해 여고생과 "일면식 없다"던 초기 진술과 달리 사전 인지 정황이 드러나며 수사 신빙성 논란이 세 커뮤니티에서 동시 확산.</div>
 
     <div class="sentiment-box">
       <div class="sentiment-title">커뮤니티별 여론 종합</div>
       <div class="sentiment-row">
         <span class="sentiment-source">에펨코리아</span>
-        <span class="sentiment-text">수사기관의 초동 대응 미흡을 강하게 질타하는 반응이 다수. 피해자 가족에 대한 동정 여론 우세.</span>
+        <span class="sentiment-text">초기 진술과 실제 정황이 다르다는 점에 대한 비판적 반응이 다수(이슈 게시판 상위 노출).</span>
       </div>
       <div class="sentiment-row">
         <span class="sentiment-source">디시인사이드</span>
-        <span class="sentiment-text">"윗선 개입" 표현에 반응하며 지휘라인 책임론 제기 댓글 다수. 정치적 해석을 덧붙이는 댓글도 섞여 있음.</span>
+        <span class="sentiment-text">"윗선 지시" 표현에 반응하며 수사 지휘라인 책임론 제기, 엄정 수사 촉구 여론.</span>
+      </div>
+      <div class="sentiment-row">
+        <span class="sentiment-source">더쿠</span>
+        <span class="sentiment-text">경찰 발표 관련 기사/뉴스 카테고리 게시물이 조회 3만 회 이상 기록.</span>
       </div>
     </div>
 
     <div class="timeline">
       <div class="tl-item">
-        <div class="tl-time">13분 전</div>
+        <div class="tl-time">54분 전</div>
         <span class="tl-source">에펨코리아</span>
         <div class="tl-title"><a href="https://www.fmkorea.com/best" target="_blank" rel="noopener">장윤기, 피해 여고생 일면식 없다더니…휴대폰에 인지 정황</a></div>
-        <div class="tl-reaction"><b>댓글 반응(예시):</b> "일면식 없다는 거 자체가 거짓말이었네" 등 초기 진술 신빙성 비판 댓글 다수</div>
       </div>
       <div class="tl-item">
-        <div class="tl-time">16:05</div>
+        <div class="tl-time">16:00</div>
         <span class="tl-source">디시인사이드</span>
         <div class="tl-title"><a href="https://gall.dcinside.com/board/lists/?id=dcbest" target="_blank" rel="noopener">"윗선서 스토킹·살인 연결 막으라 지시"…장윤기 수사팀장 구속송치</a></div>
-        <div class="tl-reaction"><b>댓글 반응(예시):</b> 지휘부 책임론 댓글이 추천 상위권, 엄정 수사 촉구 여론 강함</div>
       </div>
       <div class="tl-item">
-        <div class="tl-time">14:55</div>
-        <span class="tl-source">디시인사이드</span>
-        <div class="tl-title"><a href="https://gall.dcinside.com/board/lists/?id=dcbest" target="_blank" rel="noopener">'보완수사 요구'로 장윤기 사건 막는다?..따져보니</a></div>
-        <div class="tl-reaction"><b>댓글 반응(예시):</b> "보완수사"라는 절차적 표현에 대한 불신 댓글 다수</div>
+        <div class="tl-time">14:15</div>
+        <span class="tl-source">더쿠</span>
+        <div class="tl-title"><a href="https://theqoo.net/hot" target="_blank" rel="noopener">경찰 "장윤기, 범행 전부터 피해 여고생 알고 있던 정황 발견"</a></div>
       </div>
     </div>
   </div>
 
   <div class="issue-card">
     <div class="issue-header">
-      <h3 class="issue-title">국방부 대변인 브리핑 발언 논란</h3>
-      <span class="badge single">커뮤니티 인기글</span>
+      <h3 class="issue-title">화제의 콘텐츠 '호프' 실망 여론</h3>
+      <span class="badge cross">교차 확산</span>
     </div>
     <div class="sources-row">
       <span class="source-chip">에펨코리아</span>
+      <span class="source-chip">클리앙</span>
+      <span class="source-chip">더쿠</span>
     </div>
-    <div class="issue-summary">해군 사망 브리핑 대응 태도를 둘러싸고 에펨코리아 단일 소스에서 짧은 시간 내 반복 게시.</div>
+    <div class="issue-summary">화제작 '호프'에 대한 실망·아쉬움 반응이 세 커뮤니티에서 동시에 게시되며 화제성 대비 만족도 하락 흐름이 감지됨.</div>
 
     <div class="sentiment-box">
       <div class="sentiment-title">커뮤니티별 여론 종합</div>
       <div class="sentiment-row">
         <span class="sentiment-source">에펨코리아</span>
-        <span class="sentiment-text">브리핑 태도에 대한 비판 여론이 압도적. 유가족 배려 부족을 지적하는 댓글이 상위 추천.</span>
+        <span class="sentiment-text">"인류애 박살" 등 강한 표현의 감상평이 영화/TV 게시판 인기글로 노출.</span>
+      </div>
+      <div class="sentiment-row">
+        <span class="sentiment-source">클리앙</span>
+        <span class="sentiment-text">스포일러 태그를 단 실망 후기가 연이어 게시됨.</span>
+      </div>
+      <div class="sentiment-row">
+        <span class="sentiment-source">더쿠</span>
+        <span class="sentiment-text">"에그지수(평점)가 더 떨어졌다"는 제목으로 화제성 대비 평가 하락을 지적.</span>
       </div>
     </div>
 
     <div class="timeline">
       <div class="tl-item">
- <!-- 연결 테스트: 2026-07-15T08:54:08Z -->
+        <div class="tl-time">21분 전</div>
+        <span class="tl-source">에펨코리아</span>
+        <div class="tl-title"><a href="https://www.fmkorea.com/best" target="_blank" rel="noopener">ㅅㅍ) 호프 보다가 인류애 박살났던 순간</a></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-time">17:44</div>
+        <span class="tl-source">클리앙</span>
+        <div class="tl-title"><a href="https://www.clien.net/service/board/park" target="_blank" rel="noopener">[노스포] 호프 개인적으로는 실망이네요</a></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-time">14:37</div>
+        <span class="tl-source">더쿠</span>
+        <div class="tl-title"><a href="https://theqoo.net/hot" target="_blank" rel="noopener">더 떨어진 &lt;호프&gt; 에그지수</a></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-header">
+      <h3 class="issue-title">"사과할 줄 모르는 아이들" 세대 담론</h3>
+      <span class="badge cross">교차 확산</span>
+    </div>
+    <div class="sources-row">
+      <span class="source-chip">에펨코리아</span>
+      <span class="source-chip">더쿠</span>
+    </div>
+    <div class="issue-summary">요즘 아이들의 사과 문화를 지적하는 동일 소재 글이 두 커뮤니티에서 각각 600건 이상의 댓글을 모으며 동시 화제.</div>
+
+    <div class="sentiment-box">
+      <div class="sentiment-title">커뮤니티별 여론 종합</div>
+      <div class="sentiment-row">
+        <span class="sentiment-source">에펨코리아</span>
+        <span class="sentiment-text">공감 댓글 다수, 육아·교육 방식 변화에 대한 갑론을박도 섞임.</span>
+      </div>
+      <div class="sentiment-row">
+        <span class="sentiment-source">더쿠</span>
+        <span class="sentiment-text">유사한 톤으로 공감 여론 우세, 세대별 훈육 차이 비교 댓글 다수.</span>
+      </div>
+    </div>
+
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-time">31분 전</div>
+        <span class="tl-source">에펨코리아</span>
+        <div class="tl-title"><a href="https://www.fmkorea.com/best" target="_blank" rel="noopener">사과할줄 모르는 아이들이 늘어나는 이유 (댓글 613)</a></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-time">15:50</div>
+        <span class="tl-source">더쿠</span>
+        <div class="tl-title"><a href="https://theqoo.net/hot" target="_blank" rel="noopener">사과할 줄 모르는 아이들이 많아지는 이유 (댓글 646)</a></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-header">
+      <h3 class="issue-title">허지웅 "초과이윤" 인스타 발언 화제</h3>
+      <span class="badge cross">교차 확산</span>
+    </div>
+    <div class="sources-row">
+      <span class="source-chip">에펨코리아</span>
+      <span class="source-chip">더쿠</span>
+    </div>
+    <div class="issue-summary">방송인 허지웅이 인스타그램에 올린 초과이윤 관련 글이 두 커뮤니티에서 동시에 인기글로 노출.</div>
+
+    <div class="sentiment-box">
+      <div class="sentiment-title">커뮤니티별 여론 종합</div>
+      <div class="sentiment-row">
+        <span class="sentiment-source">에펨코리아</span>
+        <span class="sentiment-text">유머·이슈 게시판 상위권, 발언 자체에 공감하는 댓글과 반박하는 댓글이 혼재.</span>
+      </div>
+      <div class="sentiment-row">
+        <span class="sentiment-source">더쿠</span>
+        <span class="sentiment-text">동일 소재로 이슈 게시판 인기글 형성, 경제 이슈에 대한 찬반 댓글 다수로 추정.</span>
+      </div>
+    </div>
+
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-time">1시간 전</div>
+        <span class="tl-source">에펨코리아</span>
+        <div class="tl-title"><a href="https://www.fmkorea.com/best" target="_blank" rel="noopener">초과이윤에 대한 허지웅 인스타 글 (댓글 638)</a></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-time">13:57</div>
+        <span class="tl-source">더쿠</span>
+        <div class="tl-title"><a href="https://theqoo.net/hot" target="_blank" rel="noopener">초과이윤에 대한 허지웅 인스타 글 (댓글 522)</a></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-header">
+      <h3 class="issue-title">이재명 대통령 연쇄 정책 발언</h3>
+      <span class="badge cross">교차 확산</span>
+    </div>
+    <div class="sources-row">
+      <span class="source-chip">디시인사이드</span>
+      <span class="source-chip">클리앙</span>
+    </div>
+    <div class="issue-summary">레버리지 ETF 보완책, 부정부패 신고, AI 기반 가짜뉴스 팩트체크 등 대통령의 연이은 발언·지시가 두 커뮤니티 정치 게시판에서 동시에 다뤄짐. 찬반 시각이 뚜렷이 갈리는 사안.</div>
+
+    <div class="sentiment-box">
+      <div class="sentiment-title">커뮤니티별 여론 종합</div>
+      <div class="sentiment-row">
+        <span class="sentiment-source">디시인사이드</span>
+        <span class="sentiment-text">여러 발언이 개별 게시물로 다뤄지며 추천수 편차가 큼. 정책 방향에 대한 찬반 댓글이 혼재.</span>
+      </div>
+      <div class="sentiment-row">
+        <span class="sentiment-source">클리앙</span>
+        <span class="sentiment-text">정치 게시판 특유의 지지 성향 댓글이 많은 편이나, 개별 정책(수사권 등)에 대해서는 우려 섞인 댓글도 눈에 띔.</span>
+      </div>
+    </div>
+
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-time">16:35</div>
+        <span class="tl-source">디시인사이드</span>
+        <div class="tl-title"><a href="https://gall.dcinside.com/board/lists/?id=dcbest" target="_blank" rel="noopener">李대통령, "레버리지 ETF 보완책 신속 마련하라" 특별지시</a></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-time">14:45</div>
+        <span class="tl-source">디시인사이드</span>
+        <div class="tl-title"><a href="https://gall.dcinside.com/board/lists/?id=dcbest" target="_blank" rel="noopener">李대통령 "가짜뉴스가 공동체 파괴...AI 기반 실시간 팩트체크"</a></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-time">17:36</div>
+        <span class="tl-source">클리앙</span>
+        <div class="tl-title"><a href="https://www.clien.net/service/board/park" target="_blank" rel="noopener">이재명대통령이 경찰에 수사권 다 주면 안되는 이유를 설명하는 과거영상이 있군요</a></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-header">
+      <h3 class="issue-title">정청래 신임 당대표 관련 논쟁</h3>
+      <span class="badge single">커뮤니티 인기글</span>
+    </div>
+    <div class="sources-row">
+      <span class="source-chip">클리앙</span>
+    </div>
+    <div class="issue-summary">정청래 당대표를 둘러싼 사과 요구, 지지 철회 등 관련 게시물이 클리앙 정치 게시판에서 짧은 시간 내 반복 게시.</div>
+
+    <div class="sentiment-box">
+      <div class="sentiment-title">커뮤니티별 여론 종합</div>
+      <div class="sentiment-row">
+        <span class="sentiment-source">클리앙</span>
+        <span class="sentiment-text">지지·비판 댓글이 팽팽히 갈리며 게시물 회전이 빠름. "사과해야 한다"는 글과 "지지 철회" 우려 글이 동시에 상위 노출.</span>
+      </div>
+    </div>
+
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-time">17:52</div>
+        <span class="tl-source">클리앙</span>
+        <div class="tl-title"><a href="https://www.clien.net/service/board/park" target="_blank" rel="noopener">일단 정청래 먼저 당대표 만들어야.</a></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-time">17:49</div>
+        <span class="tl-source">클리앙</span>
+        <div class="tl-title"><a href="https://www.clien.net/service/board/park" target="_blank" rel="noopener">또 지지철회입니까!</a></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-time">17:45</div>
+        <span class="tl-source">클리앙</span>
+        <div class="tl-title"><a href="https://www.clien.net/service/board/park" target="_blank" rel="noopener">정청래 대표 사과는 하셔야겠어요.</a></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-header">
+      <h3 class="issue-title">신인 걸그룹 '리센느' 화제 집중</h3>
+      <span class="badge single">커뮤니티 인기글</span>
+    </div>
+    <div class="sources-row">
+      <span class="source-chip">네이트판</span>
+    </div>
+    <div class="issue-summary">신인 걸그룹 '리센느' 관련 글이 네이트판 실시간 랭킹 상위를 다수 차지하며 팬덤 간 반응이 집중됨.</div>
+
+    <div class="sentiment-box">
+      <div class="sentiment-title">커뮤니티별 여론 종합</div>
+      <div class="sentiment-row">
+        <span class="sentiment-source">네이트판</span>
+        <span class="sentiment-text">호평과 타 팬덤 비교 논쟁이 공존. "1위 먼저 했다" 등 성과 관련 글에 긍정 반응 우세, 일부 비교 언급에는 반박 댓글도 다수.</span>
+      </div>
+    </div>
+
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-time">랭킹 2위</div>
+        <span class="tl-source">네이트판</span>
+        <div class="tl-title"><a href="https://pann.nate.com/talk/ranking" target="_blank" rel="noopener">하투하보다 리센느가 1위 먼저 할 줄이야... (조회 37,838 · 추천 96)</a></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-time">랭킹 4위</div>
+        <span class="tl-source">네이트판</span>
+        <div class="tl-title"><a href="https://pann.nate.com/talk/ranking" target="_blank" rel="noopener">리센느 뜨고 아일릿 원희 기세가 꺾인 느낌 (조회 36,769 · 추천 75)</a></div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-time">랭킹 10위</div>
+        <span class="tl-source">네이트판</span>
+        <div class="tl-title"><a href="https://pann.nate.com/talk/ranking" target="_blank" rel="noopener">리센느 24년 데뷔 그룹 중에서 원탑 먹은 게 대단하네 (조회 12,389 · 추천 35)</a></div>
+      </div>
+    </div>
+  </div>
+
+</main>
+<footer>
+  <p>모니터링 대상: 에펨코리아, 디시인사이드 실베, 더쿠 HOT, 네이트판 랭킹, 클리앙 모두의공원, 다음카페(수집 실패/통합 인기글 경로 미확인 — 개별 카페 산재로 접근 보류)</p>
+  <p>본 페이지는 매일 자동 수집·생성되며, 개별 커뮤니티의 게시물·댓글 내용을 요약한 것으로 원주MBC의 편집 의견이 아닙니다.</p>
+</footer>
+</body>
+</html>
