@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>오늘의 커뮤니티 핫이슈 — 2026.07.15</title>
+<style>
+  :root {
+    --bg: #f5f6f8;
+    --card-bg: #ffffff;
+    --text: #1a1a1a;
+    --text-dim: #6b7280;
+    --border: #e5e7eb;
+    --accent: #d9480f;
+    --cross: #2f6fed;
+    --cross-soft: #eaf1ff;
+    --single: #7c3aed;
+    --single-soft: #f3ecff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", "Segoe UI", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.55;
+  }
+  header { background: #111827; color: #fff; padding: 28px 20px 22px; }
+  header .inner { max-width: 900px; margin: 0 auto; }
+  header h1 { margin: 0 0 6px; font-size: 22px; }
+  header .meta { color: #9ca3af; font-size: 13px; }
+  header .meta span { margin-right: 14px; }
+  main { max-width: 900px; margin: 0 auto; padding: 24px 20px 60px; }
+  .notice {
+    background: #fff7ed; border: 1px solid #fed7aa; color: #9a3412;
+    font-size: 13px; padding: 10px 14px; border-radius: 8px; margin-bottom: 24px;
+  }
+  .issue-card {
+    background: var(--card-bg); border: 1px solid var(--border);
+    border-radius: 12px; padding: 20px 22px; margin-bottom: 20px;
+  }
+  .issue-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 8px; }
+  .issue-title { font-size: 18px; font-weight: 700; margin: 0; }
+  .badge {
+    display: inline-block; font-size: 11px; font-weight: 700;
+    padding: 3px 9px; border-radius: 999px; white-space: nowrap; margin-top: 2px;
+  }
+  .badge.cross { background: var(--cross-soft); color: var(--cross); }
+  .badge.single { background: var(--single-soft); color: var(--single); }
+  .sources-row { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+  .source-chip {
+    font-size: 12px; font-weight: 600; color: #374151;
+    background: #f3f4f6; padding: 3px 10px; border-radius: 6px;
+  }
+  .issue-summary { color: var(--text-dim); font-size: 13.5px; margin: 0 0 14px; }
+  .sentiment-box {
+    background: #f9fafb; border: 1px solid var(--border); border-radius: 8px;
+    padding: 12px 14px; margin-bottom: 16px;
+  }
+  .sentiment-title { font-size: 12.5px; font-weight: 700; color: #374151; margin-bottom: 6px; }
+  .sentiment-row { display: flex; gap: 8px; font-size: 13px; margin-bottom: 4px; align-items: baseline; }
+  .sentiment-row:last-child { margin-bottom: 0; }
+  .sentiment-source { font-weight: 700; color: #111827; min-width: 70px; flex-shrink: 0; }
+  .sentiment-text { color: #4b5563; }
+  .timeline { border-left: 2px solid var(--border); margin-left: 4px; padding-left: 18px; }
+  .tl-item { position: relative; padding-bottom: 16px; }
+  .tl-item:last-child { padding-bottom: 0; }
+  .tl-item::before {
+    content: ""; position: absolute; left: -23px; top: 5px;
+    width: 8px; height: 8px; border-radius: 50%; background: var(--accent);
+  }
+  .tl-time { font-size: 12px; color: var(--text-dim); }
+  .tl-source {
+    display: inline-block; font-size: 11px; font-weight: 600; color: #374151;
+    background: #f3f4f6; padding: 1px 7px; border-radius: 5px; margin-right: 6px;
+  }
+  .tl-title { font-size: 14.5px; margin-top: 2px; }
+  .tl-title a { color: var(--text); text-decoration: none; }
+  .tl-title a:hover { color: var(--accent); text-decoration: underline; }
+  .tl-reaction {
+    font-size: 12.5px; color: #6b7280; margin-top: 4px;
+    padding-left: 2px; border-left: 2px solid #e5e7eb; padding-left: 8px;
+  }
+  .tl-reaction b { color: #374151; }
+  footer {
+    max-width: 900px; margin: 0 auto; padding: 0 20px 40px;
+    color: var(--text-dim); font-size: 12px;
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="inner">
+    <h1>오늘의 커뮤니티 핫이슈</h1>
+    <div class="meta">
+      <span>2026년 7월 15일(수) 09:10 기준</span>
+      <span>최근 24시간 · 6개 커뮤니티 모니터링</span>
+    </div>
+  </div>
+</header>
+<main>
+  <div class="notice">
+    ⚠️ 프로토타입 샘플입니다. 에펨코리아·디시인사이드 실베 2곳 실데이터로 만든 레이아웃 예시이며, 커뮤니티별 여론·댓글 반응 문구는 형식을 보여주기 위한 예시 텍스트입니다. 실제 매일 운영본은 각 게시글에 들어가 댓글을 직접 읽고 종합합니다.
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-header">
+      <h3 class="issue-title">장윤기 스토킹·살인 사건 수사 논란</h3>
+      <span class="badge cross">교차 확산</span>
+    </div>
+    <div class="sources-row">
+      <span class="source-chip">에펨코리아</span>
+      <span class="source-chip">디시인사이드</span>
+    </div>
+    <div class="issue-summary">수사 초기 대응 부실 및 윗선의 스토킹·살인 연결 차단 의혹이 핵심 쟁점.</div>
+
+    <div class="sentiment-box">
+      <div class="sentiment-title">커뮤니티별 여론 종합</div>
+      <div class="sentiment-row">
+        <span class="sentiment-source">에펨코리아</span>
+        <span class="sentiment-text">수사기관의 초동 대응 미흡을 강하게 질타하는 반응이 다수. 피해자 가족에 대한 동정 여론 우세.</span>
+      </div>
+      <div class="sentiment-row">
+        <span class="sentiment-source">디시인사이드</span>
+        <span class="sentiment-text">"윗선 개입" 표현에 반응하며 지휘라인 책임론 제기 댓글 다수. 정치적 해석을 덧붙이는 댓글도 섞여 있음.</span>
+      </div>
+    </div>
+
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-time">13분 전</div>
+        <span class="tl-source">에펨코리아</span>
+        <div class="tl-title"><a href="https://www.fmkorea.com/best" target="_blank" rel="noopener">장윤기, 피해 여고생 일면식 없다더니…휴대폰에 인지 정황</a></div>
+        <div class="tl-reaction"><b>댓글 반응(예시):</b> "일면식 없다는 거 자체가 거짓말이었네" 등 초기 진술 신빙성 비판 댓글 다수</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-time">16:05</div>
+        <span class="tl-source">디시인사이드</span>
+        <div class="tl-title"><a href="https://gall.dcinside.com/board/lists/?id=dcbest" target="_blank" rel="noopener">"윗선서 스토킹·살인 연결 막으라 지시"…장윤기 수사팀장 구속송치</a></div>
+        <div class="tl-reaction"><b>댓글 반응(예시):</b> 지휘부 책임론 댓글이 추천 상위권, 엄정 수사 촉구 여론 강함</div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-time">14:55</div>
+        <span class="tl-source">디시인사이드</span>
+        <div class="tl-title"><a href="https://gall.dcinside.com/board/lists/?id=dcbest" target="_blank" rel="noopener">'보완수사 요구'로 장윤기 사건 막는다?..따져보니</a></div>
+        <div class="tl-reaction"><b>댓글 반응(예시):</b> "보완수사"라는 절차적 표현에 대한 불신 댓글 다수</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-header">
+      <h3 class="issue-title">국방부 대변인 브리핑 발언 논란</h3>
+      <span class="badge single">커뮤니티 인기글</span>
+    </div>
+    <div class="sources-row">
+      <span class="source-chip">에펨코리아</span>
+    </div>
+    <div class="issue-summary">해군 사망 브리핑 대응 태도를 둘러싸고 에펨코리아 단일 소스에서 짧은 시간 내 반복 게시.</div>
+
+    <div class="sentiment-box">
+      <div class="sentiment-title">커뮤니티별 여론 종합</div>
+      <div class="sentiment-row">
+        <span class="sentiment-source">에펨코리아</span>
+        <span class="sentiment-text">브리핑 태도에 대한 비판 여론이 압도적. 유가족 배려 부족을 지적하는 댓글이 상위 추천.</span>
+      </div>
+    </div>
+
+    <div class="timeline">
+      <div class="tl-item">
+ 
