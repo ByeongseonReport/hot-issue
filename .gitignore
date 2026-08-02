@@ -1,0 +1,4 @@
+.deploy_key/
+auto-deploy.log
+# 작업 스케줄러 내보내기 — 기기명·윈도우 SID가 들어 있다. 공개 저장소라 뺀다.
+*.backup.xml
