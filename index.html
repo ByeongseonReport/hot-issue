@@ -3,106 +3,245 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>오늘의 커뮤니티 핫이슈 — 2026.11.18</title>
+<title>오늘의 커뮤니티 핫이슈 — 2026.11.24</title>
 <style>
-  :root {
-    --bg: #f5f6f8;
-    --card-bg: #ffffff;
-    --text: #1a1a1a;
-    --text-dim: #69707e;
-    --border: #e5e7eb;
-    --accent: #c7420e;
-    --cross: #2266ec;
-    --cross-soft: #eaf1ff;
-    --single: #7c3aed;
-    --single-soft: #f3ecff;
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    font-family: -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", "Segoe UI", sans-serif;
-    background: var(--bg);
-    color: var(--text);
-    line-height: 1.55;
-  }
-  header { background: #111827; color: #fff; padding: 28px 20px 22px; }
-  header .inner { max-width: 900px; margin: 0 auto; }
-  header h1 { margin: 0 0 6px; font-size: 22px; }
-  header .meta { color: #9ca3af; font-size: 13px; }
-  header .meta span { margin-right: 14px; }
-  main { max-width: 900px; margin: 0 auto; padding: 24px 20px 60px; }
-  .notice {
-    background: #fff7ed; border: 1px solid #fed7aa; color: #9a3412;
-    font-size: 13px; padding: 10px 14px; border-radius: 8px; margin-bottom: 24px;
-  }
-  .issue-card {
-    background: var(--card-bg); border: 1px solid var(--border);
-    border-radius: 12px; padding: 20px 22px; margin-bottom: 20px;
-  }
-  .issue-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 8px; }
-  .issue-title { font-size: 18px; font-weight: 700; margin: 0; }
-  .badge {
-    display: inline-block; font-size: 11px; font-weight: 700;
-    padding: 3px 9px; border-radius: 999px; white-space: nowrap; margin-top: 2px;
-  }
-  .badge.cross { background: var(--cross-soft); color: var(--cross); }
-  .badge.single { background: var(--single-soft); color: var(--single); }
-  .sources-row { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
-  .source-chip {
-    font-size: 12px; font-weight: 600; color: #374151;
-    background: #f3f4f6; padding: 3px 10px; border-radius: 6px;
-  }
-  .issue-summary { color: var(--text-dim); font-size: 13.5px; margin: 0 0 14px; }
-  .sentiment-box {
-    background: #f9fafb; border: 1px solid var(--border); border-radius: 8px;
-    padding: 12px 14px; margin-bottom: 16px;
-  }
-  .sentiment-title { font-size: 12.5px; font-weight: 700; color: #374151; margin-bottom: 6px; }
-  .sentiment-row { display: flex; gap: 8px; font-size: 13px; margin-bottom: 4px; align-items: baseline; }
-  .sentiment-row:last-child { margin-bottom: 0; }
-  .sentiment-source { font-weight: 700; color: #111827; min-width: 70px; flex-shrink: 0; }
-  .sentiment-text { color: #4b5563; }
-  .timeline { border-left: 2px solid var(--border); margin-left: 4px; padding-left: 18px; }
-  .tl-item { position: relative; padding-bottom: 16px; }
-  .tl-item:last-child { padding-bottom: 0; }
-  .tl-item::before {
-    content: ""; position: absolute; left: -23px; top: 5px;
-    width: 8px; height: 8px; border-radius: 50%; background: var(--accent);
-  }
-  .tl-time { font-size: 12px; color: var(--text-dim); }
-  .tl-source {
-    display: inline-block; font-size: 11px; font-weight: 600; color: #374151;
-    background: #f3f4f6; padding: 1px 7px; border-radius: 5px; margin-right: 6px;
-  }
-  .tl-title { font-size: 14.5px; margin-top: 2px; }
-  .tl-title a { color: var(--text); text-decoration: none; }
-  .tl-title a:hover { color: var(--accent); text-decoration: underline; }
-  .tl-reaction {
-    font-size: 12.5px; color: #69707e; margin-top: 4px;
-    padding-left: 2px; border-left: 2px solid #e5e7eb; padding-left: 8px;
-  }
-  .tl-reaction b { color: #374151; }
-  footer {
-    max-width: 900px; margin: 0 auto; padding: 0 20px 40px;
-    color: var(--text-dim); font-size: 12px;
-  }
+  :root { --bg:#f5f6f8; --card-bg:#fff; --text:#1a1a1a; --text-dim:#69707e; --border:#e5e7eb; --accent:#c7420e; --cross:#2266ec; --cross-soft:#eaf1ff; --single:#7c3aed; --single-soft:#f3ecff; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:-apple-system,"Apple SD Gothic Neo","Malgun Gothic","Segoe UI",sans-serif; background:var(--bg); color:var(--text); line-height:1.55; }
+  header { background:#111827; color:#fff; padding:28px 20px 22px; }
+  header .inner { max-width:900px; margin:0 auto; }
+  header h1 { margin:0 0 6px; font-size:22px; }
+  header .meta { color:#9ca3af; font-size:13px; }
+  header .meta span { margin-right:14px; }
+  main { max-width:900px; margin:0 auto; padding:24px 20px 30px; }
+  .issue-card { background:var(--card-bg); border:1px solid var(--border); border-radius:12px; padding:20px 22px; margin-bottom:20px; }
+  .issue-header { display:flex; align-items:flex-start; justify-content:space-between; gap:12px; margin-bottom:8px; }
+  .issue-title { font-size:18px; font-weight:700; margin:0; }
+  .badge { display:inline-block; font-size:11px; font-weight:700; padding:3px 9px; border-radius:999px; white-space:nowrap; margin-top:2px; }
+  .badge.cross { background:var(--cross-soft); color:var(--cross); }
+  .badge.single { background:var(--single-soft); color:var(--single); }
+  .sources-row { display:flex; flex-wrap:wrap; gap:6px; margin-bottom:10px; }
+  .source-chip { font-size:12px; font-weight:600; color:#374151; background:#f3f4f6; padding:3px 10px; border-radius:6px; }
+  .issue-summary { color:var(--text-dim); font-size:13.5px; margin:0 0 14px; }
+  .sentiment-box { background:#f9fafb; border:1px solid var(--border); border-radius:8px; padding:12px 14px; margin-bottom:16px; }
+  .sentiment-title { font-size:12.5px; font-weight:700; color:#374151; margin-bottom:6px; }
+  .sentiment-row { display:flex; gap:8px; font-size:13px; margin-bottom:4px; align-items:baseline; }
+  .sentiment-row:last-child { margin-bottom:0; }
+  .sentiment-source { font-weight:700; color:#111827; min-width:70px; flex-shrink:0; }
+  .sentiment-text { color:#4b5563; }
+  .timeline { border-left:2px solid var(--border); margin-left:4px; padding-left:18px; }
+  .tl-item { position:relative; padding-bottom:16px; }
+  .tl-item:last-child { padding-bottom:0; }
+  .tl-item::before { content:""; position:absolute; left:-23px; top:5px; width:8px; height:8px; border-radius:50%; background:var(--accent); }
+  .tl-time { font-size:12px; color:var(--text-dim); }
+  .tl-source { display:inline-block; font-size:11px; font-weight:600; color:#374151; background:#f3f4f6; padding:1px 7px; border-radius:5px; margin-right:6px; }
+  .tl-title { font-size:14.5px; margin-top:2px; }
+  .tl-title a { color:var(--text); text-decoration:none; }
+  .tl-title a:hover { color:var(--accent); text-decoration:underline; }
+  .tl-reaction { font-size:12.5px; color:#69707e; margin-top:4px; border-left:2px solid #e5e7eb; padding-left:8px; }
+  .tl-reaction b { color:#374151; }
+  footer { max-width:900px; margin:0 auto; padding:0 20px 40px; color:var(--text-dim); font-size:12px; }
+  @media (max-width:600px) { .issue-header { flex-direction:column; } .sentiment-row { flex-direction:column; gap:2px; } }
 </style>
 </head>
 <body>
-<header><div class="inner"><h1>오늘의 커뮤니티 핫이슈</h1><div class="meta"><span>2026년 11월 18일(수) 09:34 기준</span><span>최근 24시간 · 6개 커뮤니티 모니터링</span></div></div></header>
+<header>
+  <div class="inner">
+    <h1>오늘의 커뮤니티 핫이슈</h1>
+    <div class="meta">
+      <span>2026년 11월 24일(화) 09:21 기준</span>
+      <span>최근 24시간 · 6개 커뮤니티 모니터링</span>
+    </div>
+  </div>
+</header>
 <main>
-<div class="issue-card"><div class="issue-header"><h3 class="issue-title">세무사 시험 AI 안경 부정행위 의혹 확산</h3><span class="badge cross">교차 확산</span></div><div class="sources-row"><span class="source-chip">에펨코리아</span><span class="source-chip">디시인사이드</span><span class="source-chip">더쿠</span><span class="source-chip">클리앙</span><span class="source-chip">네이트판</span></div><div class="issue-summary">올해 세무사 시험 고득점자 AI 부정행위 의혹과 중국 업체 컨닝 장비 홍보, 일부 합격자(미확인 의혹) 해명·연락두절 보도가 24시간 내내 이어지는 중. 수능 D-1과 맞물려 부정행위 이슈로 확장.</div><div class="sentiment-box"><div class="sentiment-title">커뮤니티별 여론 종합</div><div class="sentiment-row"><span class="sentiment-source">에펨코리아</span><span class="sentiment-text">연관 글이 베스트에 대거 포진(추천 1,000~2,000대). 의혹 당사자에 대한 확인 요구와 시험 신뢰 훼손에 대한 분노가 큼. 단, 사실로 확인되지 않은 폭로·추정 글이 섞여 있음.</span></div><div class="sentiment-row"><span class="sentiment-source">디시인사이드</span><span class="sentiment-text">세무사·싱글벙글·이슈 갤러리를 중심으로 조회 2만~4만대 글 다수. 중국산 장비·AI 안경 이야기가 풍자와 함께 확산.</span></div><div class="sentiment-row"><span class="sentiment-source">더쿠</span><span class="sentiment-text">&quot;중국제 AI 컨닝업체 제품 구매자&quot; 글이 조회 9.5만, 정부 수법 공개 요구 기사 등 관심 높음.</span></div><div class="sentiment-row"><span class="sentiment-source">클리앙</span><span class="sentiment-text">제목 기준 정부 대응 비판·탐지 앱 제작 공유 등 대책 중심 토론. 네이트판은 &quot;AI안경사태&quot; 관련 댓글 다수 글이 베스트 상위.</span></div></div><div class="timeline"><div class="tl-item"><div class="tl-time">09:31</div><span class="tl-source">디시인사이드</span><div class="tl-title"><a href="https://gall.dcinside.com/board/view/?id=dcbest&no=479710" target="_blank" rel="noopener">다시는 못 올... 세무사갤 역대급 전성기 리더.cat</a></div><div class="tl-reaction"><b>반응:</b> 세무사갤 활황을 풍자하는 반응. 추천 153</div></div><div class="tl-item"><div class="tl-time">08:40</div><span class="tl-source">디시인사이드</span><div class="tl-title"><a href="https://gall.dcinside.com/board/view/?id=dcbest&no=479698" target="_blank" rel="noopener">싱글벙글 세무사 시험 컨닝하는 방법~</a></div><div class="tl-reaction"><b>반응:</b> 조회 1.8만, 수법 호기심·냉소 반응</div></div><div class="tl-item"><div class="tl-time">02:05</div><span class="tl-source">더쿠</span><div class="tl-title"><a href="https://theqoo.net/hot" target="_blank" rel="noopener">[속보] 안철수 &quot;세무사 시험 1차 과목 90점 이상 득점자, 올해 66명…정부, 수법 공개해야&quot;</a></div><div class="tl-reaction"><b>반응:</b> 댓글 667, 수법 공개 요구에 공감하는 반응 중심</div></div><div class="tl-item"><div class="tl-time">10시간 전</div><span class="tl-source">에펨코리아</span><div class="tl-title"><a href="https://www.fmkorea.com/best" target="_blank" rel="noopener">저도 AI로 부정행위했어요... 자수합니다 (추천 757)</a></div><div class="tl-reaction"><b>반응:</b> 패러디성 글이나 베스트 상위 — 풍자 반응 다수</div></div><div class="tl-item"><div class="tl-time">11.17 낮</div><span class="tl-source">더쿠</span><div class="tl-title"><a href="https://theqoo.net/hot" target="_blank" rel="noopener">중국제 AI 컨닝업체 제품 구매한 애들이 ㅈ된 이유</a></div><div class="tl-reaction"><b>반응:</b> 조회 9.5만, 댓글 474</div></div><div class="tl-item"><div class="tl-time">11.17 낮</div><span class="tl-source">디시인사이드</span><div class="tl-title"><a href="https://gall.dcinside.com/board/view/?id=dcbest&no=479612" target="_blank" rel="noopener">&quot;韓세무사시험 1등 우리 덕&quot;…中업체 한국어로 ‘커닝 홍보’</a></div><div class="tl-reaction"><b>반응:</b> 추천 183, 중국 업체 홍보에 분노·경계 반응</div></div></div></div>
-<div class="issue-card"><div class="issue-header"><h3 class="issue-title">수능 D-1: 정부 부정행위 대책·재난문자 논란</h3><span class="badge cross">교차 확산</span></div><div class="sources-row"><span class="source-chip">더쿠</span><span class="source-chip">디시인사이드</span><span class="source-chip">클리앙</span><span class="source-chip">에펨코리아</span></div><div class="issue-summary">수능을 하루 앞두고 정부가 부정행위 신고 포상(건당 1억), 시험장 스마트기기 차단, 19일 오전 8시25~30분 전국 위급재난문자 발송 등 강경 대책을 발표. 대책의 실효성·위헌 논란과 정부 대응 평가가 엇갈림.</div><div class="sentiment-box"><div class="sentiment-title">커뮤니티별 여론 종합</div><div class="sentiment-row"><span class="sentiment-source">더쿠</span><span class="sentiment-text">대통령 SNS 게시물(포상 1억)·재난문자 대처법·&quot;이대로 수능 치르는 것은 위헌&quot; 헌법소원 기사에 댓글 400~800대. 수험생 불안과 대책 효과에 의문이 공존.</span></div><div class="sentiment-row"><span class="sentiment-source">디시인사이드</span><span class="sentiment-text">시사·싱글벙글 갤러리에서 대책 풍자·비판 글이 조회 2.9만~4.7만. 수능 연기 주장(강사 발언) 글도 추천 293.</span></div><div class="sentiment-row"><span class="sentiment-source">클리앙</span><span class="sentiment-text">공감 상위 다수가 정부 대응 평가(무능론 vs 옹호) 논쟁. 장관·총리 대응 비교, 시험장 부정행위 탐지 앱 제작 공유 글도 있음.</span></div><div class="sentiment-row"><span class="sentiment-source">에펨코리아</span><span class="sentiment-text">&quot;결국 서울대도 터짐&quot; 등 부정행위 관련 글과 함께 수능 관련 게시물 다수, 정부 대응에 대한 냉소 섞인 반응.</span></div></div><div class="timeline"><div class="tl-item"><div class="tl-time">11.17</div><span class="tl-source">더쿠</span><div class="tl-title"><a href="https://theqoo.net/hot" target="_blank" rel="noopener">[수능일 전국민 위급재난문자] 모레(19일) 오전 8시 25~30분 전국민에게 10.5초간 알림</a></div><div class="tl-reaction"><b>반응:</b> 댓글 684, 시간 대응 방법 문의·불만 혼재</div></div><div class="tl-item"><div class="tl-time">11.17</div><span class="tl-source">더쿠</span><div class="tl-title"><a href="https://theqoo.net/hot" target="_blank" rel="noopener">이재명 대통령 트위터 (입시 부정 신고하면 건당 1억)</a></div><div class="tl-reaction"><b>반응:</b> 댓글 804, 포상 규모에 놀라는 반응</div></div><div class="tl-item"><div class="tl-time">11.17</div><span class="tl-source">더쿠</span><div class="tl-title"><a href="https://theqoo.net/hot" target="_blank" rel="noopener">[속보] “이대로 수능 치르는 것은 위헌”...고3 수험생, 헌법소원 제기</a></div><div class="tl-reaction"><b>반응:</b> 댓글 415</div></div><div class="tl-item"><div class="tl-time">11.17</div><span class="tl-source">디시인사이드</span><div class="tl-title"><a href="https://gall.dcinside.com/board/view/?id=dcbest&no=479634" target="_blank" rel="noopener">현우진 &quot;수능 연기해야...대통령이 결단 내려달라&quot;</a></div><div class="tl-reaction"><b>반응:</b> 추천 293, 조회 2.3만</div></div><div class="tl-item"><div class="tl-time">11.17</div><span class="tl-source">클리앙</span><div class="tl-title"><a href="https://www.clien.net/service/board/park?&od=T33" target="_blank" rel="noopener">[속보] 한성숙, 재난문자 시험 전 발송해 휴대폰 적발</a></div><div class="tl-reaction"><b>반응:</b> 공감 14, 조회 7,371</div></div><div class="tl-item"><div class="tl-time">00:10</div><span class="tl-source">디시인사이드</span><div class="tl-title"><a href="https://gall.dcinside.com/board/view/?id=dcbest&no=479656" target="_blank" rel="noopener">韓총리 &quot;수능 시험장 스마트기기 원천 차단…안경·시계 전수점검&quot;</a></div><div class="tl-reaction"><b>반응:</b> 조회 1.2만, 댓글 233</div></div></div></div>
-<div class="issue-card"><div class="issue-header"><h3 class="issue-title">경북 상주 규모 3.6~3.7 지진</h3><span class="badge cross">교차 확산</span></div><div class="sources-row"><span class="source-chip">에펨코리아</span><span class="source-chip">더쿠</span><span class="source-chip">디시인사이드</span></div><div class="issue-summary">어제 밤 23시경 경북 상주 북서쪽 지역에서 규모 3.6~3.7 지진 발생. 한밤 재난문자 발송으로 화제가 됐고, 수능 D-1과 맞물려 재난문자 관련 반응이 이어짐.</div><div class="sentiment-box"><div class="sentiment-title">커뮤니티별 여론 종합</div><div class="sentiment-row"><span class="sentiment-source">에펨코리아</span><span class="sentiment-text">&quot;속보&quot; 글에 댓글 300여 개. 지진 체감 후기와 수능 전날 영향에 대한 걱정 섞인 반응.</span></div><div class="sentiment-row"><span class="sentiment-source">더쿠</span><span class="sentiment-text">[지진정보] 글 댓글 253. 체감 후기 공유 중심.</span></div><div class="sentiment-row"><span class="sentiment-source">디시인사이드</span><span class="sentiment-text">&quot;개뜬금없이 재난문자 울리기 24시간전&quot;(조회 5,437) 등 재난문자 풍자가 이어짐.</span></div></div><div class="timeline"><div class="tl-item"><div class="tl-time">10시간 전</div><span class="tl-source">에펨코리아</span><div class="tl-title"><a href="https://www.fmkorea.com/best" target="_blank" rel="noopener">[지진 속보] 경북 상주 규모 3.7 최대 진도 IV 지진 발생 (추천 313)</a></div><div class="tl-reaction"><b>반응:</b> 체감 후기와 놀람 반응</div></div><div class="tl-item"><div class="tl-time">11.17 23:10</div><span class="tl-source">더쿠</span><div class="tl-title"><a href="https://theqoo.net/hot" target="_blank" rel="noopener">[지진정보] 11-17 23:10 경북 상주시 북서쪽 22km 지역 규모3.6</a></div><div class="tl-reaction"><b>반응:</b> 댓글 253</div></div><div class="tl-item"><div class="tl-time">09:30</div><span class="tl-source">디시인사이드</span><div class="tl-title"><a href="https://gall.dcinside.com/board/view/?id=dcbest&no=479708" target="_blank" rel="noopener">개뜬금없이 재난문자 울리기 24시간전</a></div><div class="tl-reaction"><b>반응:</b> 수능 재난문자 예고와 엮은 풍자 반응</div></div></div></div>
-<div class="issue-card"><div class="issue-header"><h3 class="issue-title">젠슨 황 &quot;이사회 동의하면 복귀&quot; 발언</h3><span class="badge cross">교차 확산</span></div><div class="sources-row"><span class="source-chip">에펨코리아</span><span class="source-chip">디시인사이드</span></div><div class="issue-summary">젠슨 황이 SNS로 &quot;이사회가 동의만 해주면 복귀하겠다&quot;고 밝혔다는 소식이 확산. 미국 공화당의 일축 보도, 일론 머스크 구인공고 등 파생 글이 이어짐.</div><div class="sentiment-box"><div class="sentiment-title">커뮤니티별 여론 종합</div><div class="sentiment-row"><span class="sentiment-source">에펨코리아</span><span class="sentiment-text">속보 글 추천 400대, 댓글 318. 사태 진위와 향후 전개에 대한 호기심 및 농담 섞인 반응.</span></div><div class="sentiment-row"><span class="sentiment-source">디시인사이드</span><span class="sentiment-text">미국주식·러시아·유머 갤러리에서 복귀설·친중 발언 논란 글이 다수 올라옴. 반응은 진영·시각에 따라 갈림.</span></div></div><div class="timeline"><div class="tl-item"><div class="tl-time">6시간 전</div><span class="tl-source">에펨코리아</span><div class="tl-title"><a href="https://www.fmkorea.com/best" target="_blank" rel="noopener">[속보]젠슨 황, SNS에 직접 입장표명 &quot;이사회가 동의만 해주면 복귀하겠다&quot; (추천 409)</a></div><div class="tl-reaction"><b>반응:</b> 댓글 318</div></div><div class="tl-item"><div class="tl-time">11.17</div><span class="tl-source">디시인사이드</span><div class="tl-title"><a href="https://gall.dcinside.com/board/view/?id=dcbest&no=479650" target="_blank" rel="noopener">공화당, 젠슨황 복귀 이야기 일축...JPG</a></div><div class="tl-reaction"><b>반응:</b> 추천 98</div></div><div class="tl-item"><div class="tl-time">11.17</div><span class="tl-source">디시인사이드</span><div class="tl-title"><a href="https://gall.dcinside.com/board/view/?id=dcbest&no=479615" target="_blank" rel="noopener">젠슨 황 화들짝! 일론 머스크 새 구인공고 떴다ㅋㅋ</a></div><div class="tl-reaction"><b>반응:</b> 추천 335, 조회 2.4만</div></div></div></div>
-<div class="issue-card"><div class="issue-header"><h3 class="issue-title">축구 대표팀: 카타르전·모레노 감독 계약 종료</h3><span class="badge single">커뮤니티 인기글</span></div><div class="sources-row"><span class="source-chip">에펨코리아</span></div><div class="issue-summary">카타르전 이후 모레노 임시감독 계약 종료 공식 발표와 최종 성적 정리 글, 일본 대표팀 모리야스 결별 소식까지 에펨코리아 베스트에 동시에 올라옴. 디시에서도 감독 선임 논쟁 글 확인.</div><div class="sentiment-box"><div class="sentiment-title">커뮤니티별 여론 종합</div><div class="sentiment-row"><span class="sentiment-source">에펨코리아</span><span class="sentiment-text">경기 장면 영상·감독 평가·후임 논의가 섞여 있음. 올해 대표팀 성적에 대한 불만이 큰 글도 추천 283.</span></div><div class="sentiment-row"><span class="sentiment-source">디시인사이드</span><span class="sentiment-text">&quot;모리야스를 국대 선임하자는 게 축알못인 이유&quot; 글 추천 328로 감독 선임 논쟁 중.</span></div></div><div class="timeline"><div class="tl-item"><div class="tl-time">6시간 전</div><span class="tl-source">에펨코리아</span><div class="tl-title"><a href="https://www.fmkorea.com/best" target="_blank" rel="noopener">[오피셜] 모레노 임시감독 계약 종료 (추천 414)</a></div><div class="tl-reaction"><b>반응:</b> 댓글 367</div></div><div class="tl-item"><div class="tl-time">7시간 전</div><span class="tl-source">에펨코리아</span><div class="tl-title"><a href="https://www.fmkorea.com/best" target="_blank" rel="noopener">[오피셜] 일본 축구 대표팀, 모리야스와 결별 (추천 651)</a></div><div class="tl-reaction"><b>반응:</b> 댓글 360</div></div><div class="tl-item"><div class="tl-time">07:50</div><span class="tl-source">디시인사이드</span><div class="tl-title"><a href="https://gall.dcinside.com/board/view/?id=dcbest&no=479688" target="_blank" rel="noopener">모리야스를 국대 선임하자는 게 축알못인 이유...jpg</a></div><div class="tl-reaction"><b>반응:</b> 추천 328, 조회 1만</div></div></div></div>
-<div class="issue-card"><div class="issue-header"><h3 class="issue-title">일본·대마도 마운자로 구매 열풍</h3><span class="badge cross">교차 확산</span></div><div class="sources-row"><span class="source-chip">에펨코리아</span><span class="source-chip">더쿠</span></div><div class="issue-summary">일본에서 마운자로를 사면 받는 지도(에펨 추천 2,990, 어제 오후 시간대 최상위)와 대마도 마운자로 전용 병원 설립 검토 소식이 동시에 화제.</div><div class="sentiment-box"><div class="sentiment-title">커뮤니티별 여론 종합</div><div class="sentiment-row"><span class="sentiment-source">에펨코리아</span><span class="sentiment-text">추천 2,990으로 24시간 최상위권. 가격 차이·원정 구매에 대한 놀라움과 농담이 중심.</span></div><div class="sentiment-row"><span class="sentiment-source">더쿠</span><span class="sentiment-text">대마도 전용 병원 설립 검토 글 댓글 391, 반응은 신기해하는 쪽과 의료 안전 우려 혼재.</span></div></div><div class="timeline"><div class="tl-item"><div class="tl-time">14시간 전</div><span class="tl-source">에펨코리아</span><div class="tl-title"><a href="https://www.fmkorea.com/best" target="_blank" rel="noopener">일본 가서 마운자로 사면 받는 지도 ㄷㄷㄷㄷ (추천 2,990)</a></div><div class="tl-reaction"><b>반응:</b> 댓글 864</div></div><div class="tl-item"><div class="tl-time">11.17</div><span class="tl-source">더쿠</span><div class="tl-title"><a href="https://theqoo.net/hot" target="_blank" rel="noopener">대마도에 마운자로 전용 병원 설립 검토</a></div><div class="tl-reaction"><b>반응:</b> 댓글 391</div></div></div></div>
-<div class="issue-card"><div class="issue-header"><h3 class="issue-title">연세대 원주 치/위생 관련 논란 글 확산</h3><span class="badge single">커뮤니티 인기글</span></div><div class="sources-row"><span class="source-chip">디시인사이드</span></div><div class="issue-summary">디시 세무사갤에 올라온 연세대 원주 관련 논란 당사자 입장 글(펌)이 추천 348, 조회 3만을 기록. 원주 지역 학교와 관련된 사안이라 별도 모니터링 대상. 글쓴이 주장은 확인되지 않았음.</div><div class="sentiment-box"><div class="sentiment-title">커뮤니티별 여론 종합</div><div class="sentiment-row"><span class="sentiment-source">디시인사이드</span><span class="sentiment-text">당사자 글이라 사실 여부는 확인되지 않았고, 댓글에서는 학교 측 해명 요구와 확인 필요하다는 반응이 갈림.</span></div></div><div class="timeline"><div class="tl-item"><div class="tl-time">11.17</div><span class="tl-source">디시인사이드</span><div class="tl-title"><a href="https://gall.dcinside.com/board/view/?id=dcbest&no=479632" target="_blank" rel="noopener">연세대 원주 치/위생 생동차 20등 논란 당사자입니다. (펌)</a></div><div class="tl-reaction"><b>반응:</b> 추천 348, 조회 3만, 댓글 372</div></div></div></div>
+
+  <div class="issue-card">
+    <div class="issue-header">
+      <h3 class="issue-title">젠슨 황 엔비디아 CEO 복귀, 트럼프 지지에 AI·반도체주 급등 기대</h3>
+      <span class="badge cross">교차 확산</span>
+    </div>
+    <div class="sources-row">
+<span class="source-chip">에펨코리아</span><span class="source-chip">더쿠</span><span class="source-chip">클리앙</span><span class="source-chip">디시인사이드</span></div>
+    <div class="issue-summary">젠슨 황 복귀 소식과 트럼프 발언이 새벽부터 아침까지 이어지며, 삼성전자·SK하이닉스 프리마켓 급등과 코스피 매수 사이드카(올해 100번째) 화제로 번졌다.</div>
+    <div class="sentiment-box">
+      <div class="sentiment-title">커뮤니티별 여론 종합</div>
+      <div class="sentiment-row"><span class="sentiment-source">에펨코리아</span><span class="sentiment-text">복귀 환영과 폭등 기대 일색. &#x27;어제 풀매수&#x27; 인증·후회를 소재로 한 유머성 글이 최상위 추천을 차지.</span></div>
+      <div class="sentiment-row"><span class="sentiment-source">더쿠</span><span class="sentiment-text">복귀 소식 자체에 반응(이사회 만장일치 글 댓글 745). 전날 폭락에 물린 투자자를 다룬 기사 글도 함께 상위에 올라 낙관과 경계가 공존.</span></div>
+      <div class="sentiment-row"><span class="sentiment-source">클리앙</span><span class="sentiment-text">&#x27;오늘의 국장&#x27; 반등 기대와 함께 전날 급락 이후의 경계감이 섞여 있음. 사이드카·프리마켓 속보 글에 댓글이 몰림.</span></div>
+      <div class="sentiment-row"><span class="sentiment-source">디시인사이드</span><span class="sentiment-text">싱갤에서 &#x27;낙관적일 때 모든 것이 가능해진다&#x27;는 젠슨 황 발언 짤이 추천 상위. 증시 이야기는 미갤에 분산.</span></div>
+    </div>
+    <div class="timeline">
+      <div class="tl-item"><div class="tl-time">약 00시경(9시간 전)</div><span class="tl-source">에펨코리아</span><div class="tl-title"><a href="https://www.fmkorea.com/best" target="_blank" rel="noopener">속보) 엔비디아 하루에 시총 1300조 증가 ㄷㄷㄷㄷㄷ</a></div><div class="tl-reaction"><b>반응 지표:</b> 추천 1,538 · 댓글 458</div></div>
+      <div class="tl-item"><div class="tl-time">약 01시경(8시간 전)</div><span class="tl-source">에펨코리아</span><div class="tl-title"><a href="https://www.fmkorea.com/best" target="_blank" rel="noopener">젠슨황 복귀 첫날</a></div><div class="tl-reaction"><b>반응 지표:</b> 추천 1,119 · 댓글 217</div></div>
+      <div class="tl-item"><div class="tl-time">약 01시경(8시간 전)</div><span class="tl-source">에펨코리아</span><div class="tl-title"><a href="https://www.fmkorea.com/best" target="_blank" rel="noopener">어제 풀매수한 SK하이닉스 사장 근황</a></div><div class="tl-reaction"><b>반응 지표:</b> 추천 1,556 · 댓글 353</div></div>
+      <div class="tl-item"><div class="tl-time">08:02</div><span class="tl-source">더쿠</span><div class="tl-title"><a href="https://theqoo.net/hot" target="_blank" rel="noopener">젠슨황 복귀 환영하는 엔비디아 직원들</a></div><div class="tl-reaction"><b>반응 지표:</b> 댓글 234 · 조회 24,354</div></div>
+      <div class="tl-item"><div class="tl-time">07:10</div><span class="tl-source">디시인사이드</span><div class="tl-title"><a href="https://gall.dcinside.com/board/view/?id=dcbest&amp;no=481226" target="_blank" rel="noopener">싱글벙글 낙관적일 때 모든 것이 가능해진다는 젠슨황</a></div><div class="tl-reaction"><b>반응 지표:</b> 추천 55 · 댓글 55 · 조회 7,817</div></div>
+      <div class="tl-item"><div class="tl-time">08:12</div><span class="tl-source">클리앙</span><div class="tl-title"><a href="https://www.clien.net/service/board/park?&amp;od=T33" target="_blank" rel="noopener">[속보] 프리마켓서 삼성전자 10%·SK하이닉스 13% 급등</a></div><div class="tl-reaction"><b>반응 지표:</b> 공감 10 · 댓글 10</div></div>
+      <div class="tl-item"><div class="tl-time">08:27</div><span class="tl-source">클리앙</span><div class="tl-title"><a href="https://www.clien.net/service/board/park?&amp;od=T33" target="_blank" rel="noopener">트황과 젠슨황이 들어올린 오늘의 국장</a></div><div class="tl-reaction"><b>반응 지표:</b> 댓글 17 · 조회 2,536</div></div>
+      <div class="tl-item"><div class="tl-time">09:05</div><span class="tl-source">클리앙</span><div class="tl-title"><a href="https://www.clien.net/service/board/park?&amp;od=T33" target="_blank" rel="noopener">[속보]코스피, 매수 사이드카 발동…올해 100번째 사이드카</a></div><div class="tl-reaction"><b>반응 지표:</b> 댓글 6 · 조회 1,380</div></div>
+    </div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-header">
+      <h3 class="issue-title">AI가 &#x27;리만 가설&#x27;을 풀었다? 화제 확산과 &#x27;인정&#x27; 논쟁</h3>
+      <span class="badge cross">교차 확산</span>
+    </div>
+    <div class="sources-row">
+<span class="source-chip">에펨코리아</span><span class="source-chip">더쿠</span><span class="source-chip">디시인사이드</span></div>
+    <div class="issue-summary">새벽에 &#x27;AI가 리만 가설을 풀었다&#x27;는 글이 여러 커뮤니티에 동시에 올라왔고, 디시에서는 전날부터 &#x27;증명 인정 여부&#x27; 해석을 바로잡는 글이 이어졌다. 검증이 끝난 사안은 아님.</div>
+    <div class="sentiment-box">
+      <div class="sentiment-title">커뮤니티별 여론 종합</div>
+      <div class="sentiment-row"><span class="sentiment-source">에펨코리아</span><span class="sentiment-text">설명글(추천 1,377, 댓글 811)과 &#x27;Claude로 증명까지 걸린 시간&#x27; 글이 동시에 상위. 에펨 실시간 검색어 6위로 급상승.</span></div>
+      <div class="sentiment-row"><span class="sentiment-source">더쿠</span><span class="sentiment-text">&#x27;무엇인지 알아보자&#x27; 형식의 쉬운 설명글이 중심. 놀라움·신기함 반응이 다수.</span></div>
+      <div class="sentiment-row"><span class="sentiment-source">디시인사이드</span><span class="sentiment-text">싱갤에서 &#x27;증명 인정이라는 건 오해&#x27;라는 정정·설명글이 추천 134. 특갤에서는 AI 시대 박탈감을 토로하는 글이 추천 상위.</span></div>
+    </div>
+    <div class="timeline">
+      <div class="tl-item"><div class="tl-time">약 02시경(7시간 전)</div><span class="tl-source">에펨코리아</span><div class="tl-title"><a href="https://www.fmkorea.com/best" target="_blank" rel="noopener">펌) 지금 AI가 풀어서 난리라는 &quot;리만가설&quot;이 무엇인지 알아보자</a></div><div class="tl-reaction"><b>반응 지표:</b> 추천 1,377 · 댓글 811</div></div>
+      <div class="tl-item"><div class="tl-time">01:52</div><span class="tl-source">더쿠</span><div class="tl-title"><a href="https://theqoo.net/hot" target="_blank" rel="noopener">지금 AI가 풀어서 난리라는 &quot;리만 가설&quot;이 무엇인지 알아보자...jpg</a></div><div class="tl-reaction"><b>반응 지표:</b> 댓글 256 · 조회 52,941</div></div>
+      <div class="tl-item"><div class="tl-time">11.23 저녁</div><span class="tl-source">디시인사이드</span><div class="tl-title"><a href="https://gall.dcinside.com/board/view/?id=dcbest&amp;no=481075" target="_blank" rel="noopener">싱글벙글 념글 리만 증명 인정 오해 많은거 같아서 설명..</a></div><div class="tl-reaction"><b>반응 지표:</b> 추천 134 · 댓글 255 · 조회 29,291</div></div>
+      <div class="tl-item"><div class="tl-time">약 01시경(8시간 전)</div><span class="tl-source">에펨코리아</span><div class="tl-title"><a href="https://www.fmkorea.com/best" target="_blank" rel="noopener">Claude 로 리만 가설 증명까지 걸린 시간 ㄷㄷㄷㄷ.jpg</a></div><div class="tl-reaction"><b>반응 지표:</b> 추천 528 · 댓글 352</div></div>
+      <div class="tl-item"><div class="tl-time">11.23 저녁</div><span class="tl-source">디시인사이드</span><div class="tl-title"><a href="https://gall.dcinside.com/board/view/?id=dcbest&amp;no=481077" target="_blank" rel="noopener">공부 못하는 사람의 심정을 지금 천재들이 느끼고 있음</a></div><div class="tl-reaction"><b>반응 지표:</b> 추천 349 · 댓글 530 · 조회 38,042</div></div>
+    </div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-header">
+      <h3 class="issue-title">러시아 군용기 동해 KADIZ 진입·울릉 경계경보, &#x27;북한 항공기&#x27; 보도 정정</h3>
+      <span class="badge cross">교차 확산</span>
+    </div>
+    <div class="sources-row">
+<span class="source-chip">에펨코리아</span><span class="source-chip">클리앙</span></div>
+    <div class="issue-summary">오늘 아침 울릉 지역 경계경보와 함께 &#x27;북한 항공기 영공 침범&#x27;이 먼저 전해졌다가 &#x27;러시아 군용기 수 대의 KADIZ 진입&#x27;으로 정정되면서 혼선이 일었다.</div>
+    <div class="sentiment-box">
+      <div class="sentiment-title">커뮤니티별 여론 종합</div>
+      <div class="sentiment-row"><span class="sentiment-source">에펨코리아</span><span class="sentiment-text">경계경보 발령 직후 실시간 속보 글이 연달아 올라와 댓글이 폭주. 이후 언론 정정 소식에 &#x27;오보&#x27; 지적 반응.</span></div>
+      <div class="sentiment-row"><span class="sentiment-source">클리앙</span><span class="sentiment-text">북한→러시아로 바뀐 정정 과정을 실시간으로 중계하는 글이 연속. 초기 보도 혼선을 지적하는 분위기.</span></div>
+    </div>
+    <div class="timeline">
+      <div class="tl-item"><div class="tl-time">08:08</div><span class="tl-source">클리앙</span><div class="tl-title"><a href="https://www.clien.net/service/board/park?&amp;od=T33" target="_blank" rel="noopener">북한 항공기가 울릉도쪽 영공을 침범했었네요</a></div><div class="tl-reaction"><b>반응 지표:</b> 댓글 3 · 조회 2,215</div></div>
+      <div class="tl-item"><div class="tl-time">08:14</div><span class="tl-source">클리앙</span><div class="tl-title"><a href="https://www.clien.net/service/board/park?&amp;od=T33" target="_blank" rel="noopener">러시아 아니고 북한이네요 (수정-러시아맞네요)</a></div><div class="tl-reaction"><b>반응 지표:</b> 댓글 8 · 조회 2,664</div></div>
+      <div class="tl-item"><div class="tl-time">약 08시경(1시간 전)</div><span class="tl-source">에펨코리아</span><div class="tl-title"><a href="https://www.fmkorea.com/best" target="_blank" rel="noopener">경계경보 발령: 울릉지역</a></div><div class="tl-reaction"><b>반응 지표:</b> 추천 576 · 댓글 331</div></div>
+      <div class="tl-item"><div class="tl-time">약 08시경(1시간 전)</div><span class="tl-source">에펨코리아</span><div class="tl-title"><a href="https://www.fmkorea.com/best" target="_blank" rel="noopener">긴급 경계경보! 러시아 항공기 영공침범</a></div><div class="tl-reaction"><b>반응 지표:</b> 추천 657 · 댓글 291</div></div>
+      <div class="tl-item"><div class="tl-time">08:25</div><span class="tl-source">클리앙</span><div class="tl-title"><a href="https://www.clien.net/service/board/park?&amp;od=T33" target="_blank" rel="noopener">[속보] 軍 &#x27;북한 항공기 아닌 러 군용기 수대 동해 KADIZ 진입&#x27;</a></div><div class="tl-reaction"><b>반응 지표:</b> 댓글 1 · 조회 2,003</div></div>
+      <div class="tl-item"><div class="tl-time">약 09시경(25분 전)</div><span class="tl-source">에펨코리아</span><div class="tl-title"><a href="https://www.fmkorea.com/best" target="_blank" rel="noopener">YTN 보도 정정) 북한이 아니라 러시아 항공기 침범</a></div><div class="tl-reaction"><b>반응 지표:</b> 추천 251 · 댓글 175</div></div>
+    </div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-header">
+      <h3 class="issue-title">성시경 유튜브 &#x27;채령 편&#x27; 댓글 논란</h3>
+      <span class="badge cross">교차 확산</span>
+    </div>
+    <div class="sources-row">
+<span class="source-chip">에펨코리아</span><span class="source-chip">더쿠</span><span class="source-chip">네이트판</span></div>
+    <div class="issue-summary">성시경 유튜브의 아이돌 채령 출연 편을 두고 진행 태도에 대한 비판 댓글이 늘면서 어제 밤부터 3개 커뮤니티에서 동시에 화제가 됐다.</div>
+    <div class="sentiment-box">
+      <div class="sentiment-title">커뮤니티별 여론 종합</div>
+      <div class="sentiment-row"><span class="sentiment-source">에펨코리아</span><span class="sentiment-text">&#x27;여론 씹창난 댓글&#x27; 캡처글이 추천 1,196·댓글 1,947로 해당 시간대 최다 반응 글 중 하나. 실시간 검색어 2위.</span></div>
+      <div class="sentiment-row"><span class="sentiment-source">더쿠</span><span class="sentiment-text">&#x27;반응 안 좋은 댓글 상황&#x27; 글에 댓글 753·조회 10만 이상. 진행 방식을 비판하는 쪽이 우세.</span></div>
+      <div class="sentiment-row"><span class="sentiment-source">네이트판</span><span class="sentiment-text">&#x27;채령이는 진짜 프로 아이돌이네&#x27;(조회 16,858)가 랭킹 상위. 베스트 댓글도 출연자 쪽에 공감하는 내용 중심.</span></div>
+    </div>
+    <div class="timeline">
+      <div class="tl-item"><div class="tl-time">약 21시경(어제)</div><span class="tl-source">에펨코리아</span><div class="tl-title"><a href="https://www.fmkorea.com/best" target="_blank" rel="noopener">여론 씹창난 성시경 유튜브 댓글.JPG</a></div><div class="tl-reaction"><b>반응 지표:</b> 추천 1,196 · 댓글 1,947</div></div>
+      <div class="tl-item"><div class="tl-time">11.23</div><span class="tl-source">더쿠</span><div class="tl-title"><a href="https://theqoo.net/hot" target="_blank" rel="noopener">반응 ㄹㅇ 안 좋은 성시경 유튜브 채령편 댓글 상황.jpg</a></div><div class="tl-reaction"><b>반응 지표:</b> 댓글 753 · 조회 101,231</div></div>
+      <div class="tl-item"><div class="tl-time">실시간 랭킹</div><span class="tl-source">네이트판</span><div class="tl-title"><a href="https://pann.nate.com/talk/ranking" target="_blank" rel="noopener">채령이는 진짜 프로 아이돌이네</a></div><div class="tl-reaction"><b>반응 지표:</b> 댓글 18 · 조회 16,858 · 추천 13</div></div>
+    </div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-header">
+      <h3 class="issue-title">도심 마라톤 교통통제 불만과 &#x27;김대중마라톤&#x27; 19세 참가자 사망</h3>
+      <span class="badge cross">교차 확산</span>
+    </div>
+    <div class="sources-row">
+<span class="source-chip">더쿠</span><span class="source-chip">디시인사이드</span><span class="source-chip">에펨코리아</span></div>
+    <div class="issue-summary">어제 열린 도심 마라톤의 교통통제로 출근·이동에 피해를 본 사례가 연이어 올라왔고, 대회 후 참가자가 숨졌다는 소식도 함께 화제가 됐다.</div>
+    <div class="sentiment-box">
+      <div class="sentiment-title">커뮤니티별 여론 종합</div>
+      <div class="sentiment-row"><span class="sentiment-source">더쿠</span><span class="sentiment-text">&#x27;마라톤 때문에 피해 본 사람들&#x27; 글에 댓글 972·조회 94,655. 통제 방식에 대한 불만이 다수.</span></div>
+      <div class="sentiment-row"><span class="sentiment-source">디시인사이드</span><span class="sentiment-text">싱갤에서 시민·어르신 피해 사례 글이 추천 100~220대로 반복. 사망 소식 글은 추모와 대회 안전관리 문제 제기가 섞여 있음.</span></div>
+      <div class="sentiment-row"><span class="sentiment-source">에펨코리아</span><span class="sentiment-text">&#x27;마라톤 때문에 출근을 못하는 의사&#x27; 영상이 추천 937·댓글 681로 반응이 컸음.</span></div>
+    </div>
+    <div class="timeline">
+      <div class="tl-item"><div class="tl-time">11.23 낮</div><span class="tl-source">디시인사이드</span><div class="tl-title"><a href="https://gall.dcinside.com/board/view/?id=dcbest&amp;no=481127" target="_blank" rel="noopener">싱글벙글 도심 마라톤에 화가난 시민들</a></div><div class="tl-reaction"><b>반응 지표:</b> 추천 122 · 댓글 364</div></div>
+      <div class="tl-item"><div class="tl-time">11.23 낮</div><span class="tl-source">디시인사이드</span><div class="tl-title"><a href="https://gall.dcinside.com/board/view/?id=dcbest&amp;no=481128" target="_blank" rel="noopener">김대중마라톤서 19세 대학생 사망… 10㎞ 완주 직후 쓰러져</a></div><div class="tl-reaction"><b>반응 지표:</b> 추천 84 · 댓글 343</div></div>
+      <div class="tl-item"><div class="tl-time">약 20시경(13시간 전)</div><span class="tl-source">에펨코리아</span><div class="tl-title"><a href="https://www.fmkorea.com/best" target="_blank" rel="noopener">마라톤 때문에 출근을 못하는 의사.mp4</a></div><div class="tl-reaction"><b>반응 지표:</b> 추천 937 · 댓글 681</div></div>
+      <div class="tl-item"><div class="tl-time">11.23</div><span class="tl-source">더쿠</span><div class="tl-title"><a href="https://theqoo.net/hot" target="_blank" rel="noopener">마라톤때문에 특히나 피해본다는 분들....jpg</a></div><div class="tl-reaction"><b>반응 지표:</b> 댓글 972 · 조회 94,655</div></div>
+      <div class="tl-item"><div class="tl-time">11.23 저녁</div><span class="tl-source">디시인사이드</span><div class="tl-title"><a href="https://gall.dcinside.com/board/view/?id=dcbest&amp;no=481052" target="_blank" rel="noopener">싱글벙글 마라톤 때문에 특히 더 피해 보는 어르신들</a></div><div class="tl-reaction"><b>반응 지표:</b> 추천 223 · 댓글 475</div></div>
+    </div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-header">
+      <h3 class="issue-title">수능 부정행위·문항 오류 논란, 자격시험 공정성 의혹으로 확산</h3>
+      <span class="badge cross">교차 확산</span>
+    </div>
+    <div class="sources-row">
+<span class="source-chip">더쿠</span><span class="source-chip">디시인사이드</span></div>
+    <div class="issue-summary">수능 스마트기기 부정행위 고발, 세계사 2번 오답률·이의신청 폭주, 변리사·노무사 시험 채점 의혹 등 &#x27;시험 공정성&#x27; 글이 어제 낮부터 이어졌다.</div>
+    <div class="sentiment-box">
+      <div class="sentiment-title">커뮤니티별 여론 종합</div>
+      <div class="sentiment-row"><span class="sentiment-source">더쿠</span><span class="sentiment-text">&#x27;챗GPT도 틀렸다, 오답률 92.6%&#x27; 세계사 2번 글 중심으로 수험생·학부모 시각의 관심이 큼.</span></div>
+      <div class="sentiment-row"><span class="sentiment-source">디시인사이드</span><span class="sentiment-text">부정행위 전수조사 거부(추천 189)와 변리사 고득점자 급증(추천 199) 글에서 불신 반응이 두드러짐. 일부 의혹은 언론 단독 보도 기반으로 확인되지 않은 상태.</span></div>
+    </div>
+    <div class="timeline">
+      <div class="tl-item"><div class="tl-time">11.23</div><span class="tl-source">디시인사이드</span><div class="tl-title"><a href="https://gall.dcinside.com/board/view/?id=dcbest&amp;no=481143" target="_blank" rel="noopener">[단독] 수능 직전 &#x27;부정시험 장비&#x27; 거래 정황…돈만 가로채는 2차 사기 우려도</a></div><div class="tl-reaction"><b>반응 지표:</b> 추천 17 · 댓글 24</div></div>
+      <div class="tl-item"><div class="tl-time">11.23</div><span class="tl-source">디시인사이드</span><div class="tl-title"><a href="https://gall.dcinside.com/board/view/?id=dcbest&amp;no=481133" target="_blank" rel="noopener">교육부 &quot;수능서 스마트기기 부정행위 적발된 5명, 전원 고발&quot;</a></div><div class="tl-reaction"><b>반응 지표:</b> 추천 24 · 댓글 70</div></div>
+      <div class="tl-item"><div class="tl-time">11.23</div><span class="tl-source">디시인사이드</span><div class="tl-title"><a href="https://gall.dcinside.com/board/view/?id=dcbest&amp;no=481106" target="_blank" rel="noopener">교육부 &quot;작년 수능 부정행위 전수조사 안한다&quot;</a></div><div class="tl-reaction"><b>반응 지표:</b> 추천 189 · 댓글 281</div></div>
+      <div class="tl-item"><div class="tl-time">11.23</div><span class="tl-source">디시인사이드</span><div class="tl-title"><a href="https://gall.dcinside.com/board/view/?id=dcbest&amp;no=481086" target="_blank" rel="noopener">변리사 고득점자 1년새 3명에서 42명으로 폭발적 증가</a></div><div class="tl-reaction"><b>반응 지표:</b> 추천 199 · 댓글 474</div></div>
+      <div class="tl-item"><div class="tl-time">11.23</div><span class="tl-source">더쿠</span><div class="tl-title"><a href="https://theqoo.net/hot" target="_blank" rel="noopener">&quot;챗GPT도 틀렸다&quot;…오답률 92.6% 기록한 수능 세계사 2번, 이의신청 최다 폭주</a></div><div class="tl-reaction"><b>반응 지표:</b> 댓글 208 · 조회 45,088</div></div>
+    </div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-header">
+      <h3 class="issue-title">KTX 민폐 승객 논란</h3>
+      <span class="badge cross">교차 확산</span>
+    </div>
+    <div class="sources-row">
+<span class="source-chip">에펨코리아</span><span class="source-chip">더쿠</span></div>
+    <div class="issue-summary">KTX에서 자리를 잘못 앉고도 한 시간 가까이 우겼다는 사례가 X(트위터)에서 퍼지며 어제 저녁부터 오늘 새벽까지 반복 게시됐다.</div>
+    <div class="sentiment-box">
+      <div class="sentiment-title">커뮤니티별 여론 종합</div>
+      <div class="sentiment-row"><span class="sentiment-source">에펨코리아</span><span class="sentiment-text">&#x27;레전드 민폐녀&#x27; 글이 두 차례 올라와 각각 댓글 854·497. 당사자를 향한 비난 일색이며 승무원 대응을 평가하는 의견도 있음.</span></div>
+      <div class="sentiment-row"><span class="sentiment-source">더쿠</span><span class="sentiment-text">&#x27;오늘 X에서 핫했던 KTX 민폐 승객&#x27; 글 조회 10만 이상. 사연 공유와 비판 반응.</span></div>
+    </div>
+    <div class="timeline">
+      <div class="tl-item"><div class="tl-time">약 20시경(13시간 전)</div><span class="tl-source">에펨코리아</span><div class="tl-title"><a href="https://www.fmkorea.com/best" target="_blank" rel="noopener">KTX에서 한 시간 동안 우기는 레전드 민폐녀</a></div><div class="tl-reaction"><b>반응 지표:</b> 추천 824 · 댓글 854</div></div>
+      <div class="tl-item"><div class="tl-time">11.23</div><span class="tl-source">더쿠</span><div class="tl-title"><a href="https://theqoo.net/hot" target="_blank" rel="noopener">오늘 x에서 핫했던 ktx 민폐승객</a></div><div class="tl-reaction"><b>반응 지표:</b> 댓글 651 · 조회 100,758</div></div>
+      <div class="tl-item"><div class="tl-time">약 01시경(8시간 전)</div><span class="tl-source">에펨코리아</span><div class="tl-title"><a href="https://www.fmkorea.com/best" target="_blank" rel="noopener">KTX 잘못 타 놓고 우기는 민폐녀</a></div><div class="tl-reaction"><b>반응 지표:</b> 추천 348 · 댓글 497</div></div>
+    </div>
+  </div>
+
+  <div class="issue-card">
+    <div class="issue-header">
+      <h3 class="issue-title">증시 급락 후 부동산·세제 정책 공방, 정치권 설전</h3>
+      <span class="badge single">커뮤니티 인기글</span>
+    </div>
+    <div class="sources-row">
+<span class="source-chip">클리앙</span><span class="source-chip">디시인사이드</span><span class="source-chip">더쿠</span></div>
+    <div class="issue-summary">코스피 급락 이후 정부의 부동산·보유세 방향과 여당 내 갈등을 둘러싼 토론이 클리앙 공감순 상위를 채웠고 디시·더쿠에도 비슷한 주제가 올랐다.</div>
+    <div class="sentiment-box">
+      <div class="sentiment-title">커뮤니티별 여론 종합</div>
+      <div class="sentiment-row"><span class="sentiment-source">클리앙</span><span class="sentiment-text">공감순 상위 대부분이 정부·여당 정책과 증시 대책을 다룸. 비판이 우세하지만 지지층 내부 비판이어서 정책 방향에 대한 논쟁이 활발.</span></div>
+      <div class="sentiment-row"><span class="sentiment-source">디시인사이드</span><span class="sentiment-text">미갤 &#x27;보유세 더내라&#x27;(추천 518) 등 세금·증시 손실 관련 불만 글이 반복. 정치 이슈 특성상 진영 공방 성격의 댓글이 많아 인용은 생략하고 논조만 요약.</span></div>
+      <div class="sentiment-row"><span class="sentiment-source">더쿠</span><span class="sentiment-text">&#x27;삼전 30만원·하닉 200만원 이상에 물린 사람, 3년은 마음 비워야&#x27; 기사 글이 댓글 485로 상위.</span></div>
+    </div>
+    <div class="timeline">
+      <div class="tl-item"><div class="tl-time">11.23</div><span class="tl-source">디시인사이드</span><div class="tl-title"><a href="https://gall.dcinside.com/board/view/?id=dcbest&amp;no=481043" target="_blank" rel="noopener">미갤 보유세 더내라</a></div><div class="tl-reaction"><b>반응 지표:</b> 추천 518 · 댓글 664</div></div>
+      <div class="tl-item"><div class="tl-time">11.23</div><span class="tl-source">더쿠</span><div class="tl-title"><a href="https://theqoo.net/hot" target="_blank" rel="noopener">&quot;삼전 30만원·하닉 200만원 이상에 물린 사람…3년은 마음 비워야&quot;</a></div><div class="tl-reaction"><b>반응 지표:</b> 댓글 485 · 조회 57,004</div></div>
+      <div class="tl-item"><div class="tl-time">11.23</div><span class="tl-source">클리앙</span><div class="tl-title"><a href="https://www.clien.net/service/board/park?&amp;od=T33" target="_blank" rel="noopener">이재명, &#x27;부동산 팔기 싫으면 그냥 두시라&#x27; 경고, &#x27;집 팔고 주식하면 이득일 것&#x27;</a></div><div class="tl-reaction"><b>반응 지표:</b> 공감 20 · 댓글 29 · 조회 5,825</div></div>
+      <div class="tl-item"><div class="tl-time">11.23</div><span class="tl-source">클리앙</span><div class="tl-title"><a href="https://www.clien.net/service/board/park?&amp;od=T33" target="_blank" rel="noopener">김민석, 취임 100일 기자회견 없다…&#x27;조희대 등 현안 정비 기간&#x27;</a></div><div class="tl-reaction"><b>반응 지표:</b> 공감 20 · 댓글 19 · 조회 2,209</div></div>
+      <div class="tl-item"><div class="tl-time">11.23</div><span class="tl-source">클리앙</span><div class="tl-title"><a href="https://www.clien.net/service/board/park?&amp;od=T33" target="_blank" rel="noopener">국장 하라면서요</a></div><div class="tl-reaction"><b>반응 지표:</b> 공감 15 · 댓글 7 · 조회 3,391</div></div>
+      <div class="tl-item"><div class="tl-time">11.23</div><span class="tl-source">디시인사이드</span><div class="tl-title"><a href="https://gall.dcinside.com/board/view/?id=dcbest&amp;no=481178" target="_blank" rel="noopener">이준석, 코스피 반토막에 &quot;&#x27;초심자의 운&#x27; 경고했지만 조롱 많이 받아&quot;…증시 대책 3가지 제안</a></div><div class="tl-reaction"><b>반응 지표:</b> 추천 65 · 댓글 181</div></div>
+    </div>
+  </div>
 
 </main>
 <footer>
-수집 소스: 에펨코리아 베스트(1·3·6페이지), 디시 실시간베스트(1·3페이지), 더쿠 HOT(1~2페이지), 네이트판 랭킹, 클리앙 모두의공원 공감순, 다음카페 인기글. 네이트판·다음카페는 연예·생활 글 위주로 이슈 클러스터를 이루지 못해 카드에서 제외했습니다(네이트판 일부 반응만 참고).<br>
-"반응" 문구는 이번 실행에서 게시물 본문·댓글을 열지 않고 목록의 제목·추천·조회·댓글 수를 바탕으로 요약한 것이며, 정치·젠더 성격의 디시 댓글은 인용하지 않고 논조 위주로 정리했습니다. 개인에 대한 의혹은 미확인이며 실명은 싣지 않았습니다.
+  수집 소스: 에펨코리아 베스트(1~16쪽 표본) · 디시인사이드 실시간베스트(1~3쪽) · 더쿠 HOT(1~2쪽) · 네이트판 실시간 랭킹 · 클리앙 모두의공원(등록일순·공감순) · 다음카페 인기글. 다음카페 인기글은 특정 카페(여성시대·도탁스) 위주 일상·연예 글이어서 클러스터를 이루지 못해 이슈에서 제외했습니다. 에펨코리아는 상대시간("N시간 전")을 수집 시각(09:25경) 기준으로 환산한 근사치입니다. 개별 게시물의 댓글 본문은 열람하지 않아 제목·추천·댓글수와 네이트판 베스트 댓글 등 노출된 지표로 여론을 요약했으며, 정치·젠더 이슈는 인용 없이 논조만 요약했습니다. 확인되지 않은 의혹·주장은 원문 보도 기준이며 사실로 단정하지 않습니다.
 </footer>
 </body>
 </html>
